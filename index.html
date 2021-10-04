@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passport Form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      background-color: rgb(223, 223, 223);
+    }
+    .container {
+      border: 5px solid black;
+    }
+    .country-code {
+      display: inline-block;
+    }
+    .form-btn {
+      display: flex;
+      justify-content: space-around;
+      /* border: 1px solid red; */
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Form classes</h1>
+        <div class="row py-3">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">First Name</label>
+              <input
+                type="text"
+                placeholder="Enter first name"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Username</label>
+              <input
+                type="text"
+                placeholder="Enter Username"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Phone Number</label>
+              <input
+                type="number"
+                placeholder="Enter phone number"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Country</label>
+              <select class="form-control">
+                <option value="India">India</option>
+                <option value="India">United States</option>
+                <option value="India">Brazil</option>
+                <option value="India">Norway</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Hobbies</label>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="musicCheck"
+                />
+                <label for="musicCheck" class="form-check-lable">Music</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rockClimbingCheck"
+                />
+                <label for="rockClimbingCheck" class="form-check-lable"
+                  >Rock Climbing</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="baseJumpingCheck"
+                />
+                <label for="baseJumpingCheck" class="form-check-lable"
+                  >Base Jumping</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Last Name</label>
+              <input
+                type="text"
+                placeholder="Enter last name"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Password</label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                class="form-control"
+              />
+              <div class="form-group">
+                <label for="">Address</label>
+                <textarea
+                  placeholder="Enter Address"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="row py-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">IsWorking?</label>
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="yesCheck"
+                        name="isWorking"
+                      />
+                      <label for="yesCheck" class="form-check-lable">Yes</label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="noCheck"
+                        name="isWorking"
+                      />
+                      <label for="noCheck" class="form-check-lable">No</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Gender</label>
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="gender"
+                        id="maleRadio"
+                      />
+                      <label for="maleRadio" class="form-check-lable"
+                        >Male</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="gender"
+                        id="femaleRadio"
+                      />
+                      <label for="femaleRadio" class="form-check-lable"
+                        >Female</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-btn">
+            <input
+              type="submit"
+              value="Submit"
+              onClick="console.log(`Form submit by user.`)"
+            />
+            <input
+              type="reset"
+              value="Cancel"
+              onClick="console.log(`Form cancel by user.`)"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
